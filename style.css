@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.light button {
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 30px;
+    right: 185px;
+}
+
+
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #111;
+    margin: 4px 0;
+    box-shadow: 1px 1px 2px #222;
+    border-radius: 5px;
+    padding: 4px;
+    color: #fff;
+}
+
+input:focus {
+    background: #000;
+    transform: scale(1.01);
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background: #3a6cf4;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #3a6cf4;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #0a49f6;
+    letter-spacing: 1px;
+}
+
+.btnsearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+    font-weight: 500;
+}
+
+#update:hover,
+#delete:hover {
+    background: #0a49f6;
+    letter-spacing: 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+.dark-mode {
+    background: #fff;
+    /* Background color for dark mode */
+    color: #000;
+    /* Text color for dark mode */
+}
+
+.dark-mode input {
+    background: #aaa9a975;
+    color: #000;
+}
+
+.dark-mode input:focus {
+    background: #fff;
+    transform: scale(1.01);
+}
+
+
+.dark-mode button {
+    color: #fff;
+    background: #343434;
+}
+
+.dark-mode button:hover {
+    background: #222;
+}
+
+.dark-mode #total {
+    color: #fff;
+    background: #343434;
+}
+
+@media (max-width: 600px) {
+    .cruds {
+        width: 95%;
+    }
+
+    .light button {
+        right: 10px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .btnsearch {
+        flex-direction: column;
+    }
+
+    .btnsearch button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .price input {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .cruds {
+        width: 90%;
+    }
+
+    .light button {
+        right: 20px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .btnsearch {
+        flex-direction: column;
+    }
+
+    .btnsearch button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .price input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1030px) {
+    .cruds {
+        width: 85%;
+    }
+
+    .light button {
+        right: 80px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .btnsearch button {
+        width: 48%;
+    }
+
+    .price input {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1031px) {
+    .cruds {
+        width: 70%;
+    }
+
+    .light button {
+        right: 275px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .btnsearch button {
+        width: 45%;
+    }
+
+    .price input {
+        width: 20%;
+    }
+}
