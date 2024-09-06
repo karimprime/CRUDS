@@ -34,13 +34,11 @@ function colors(color) {
         ld.classList.add('hide');
         dl.classList.remove('hide');
         total.style.background = '#343434';
-        body.style.transition = "1s";
     } else {
         body.classList.remove('dark-mode');
         dl.classList.add('hide');
         ld.classList.remove('hide');
         total.style.background = '#3a6cf4';
-        body.style.transition = "1s";
     }
 }
 
