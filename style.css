@@ -11,13 +11,10 @@ body {
 }
 
 
-.light button {
+.head button {
     width: 30px;
     height: 30px;
-
-    position: absolute;
-    top: 30px;
-    right: 185px;
+    display: in;
 }
 
 
@@ -27,6 +24,10 @@ body {
 }
 
 .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0;
@@ -152,109 +153,40 @@ td {
     background: #343434;
 }
 
-@media (max-width: 600px) {
-    .cruds {
-        width: 95%;
+@media (max-width: 768px) {
+    .inputs .price input {
+      width: 100%;
     }
-
-    .light button {
-        right: 10px;
+  
+    .inputs .price #total {
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+      width: fit-content;
     }
-
-    input,
-    button {
-        width: 100%;
+  
+    .title p {
+      letter-spacing: 1px;
     }
-
-    .btnsearch {
-        flex-direction: column;
+  
+    .btn-search {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
-
-    .btnsearch button {
-        width: 100%;
-        margin-bottom: 10px;
+    .btn-search button {
+      margin: 5px 0;
+      font-size: 15px;
     }
-
-    .price input {
-        width: 100%;
+  }
+  
+  @media (max-width: 1200px) {
+    .crud-container {
+      width: 100%;
     }
-
-    table {
-        font-size: 14px;
+  
+    .table-content {
+      min-width: 100%;
+      overflow-x: auto;
     }
-}
-
-
-@media (min-width: 400px) and (max-width: 768px) {
-    .cruds {
-        width: 90%;
-    }
-
-    .light button {
-        right: 20px;
-    }
-
-    input,
-    button {
-        width: 100%;
-    }
-
-    .btnsearch {
-        flex-direction: column;
-    }
-
-    .btnsearch button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .price input {
-        width: 50%;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1030px) {
-    .cruds {
-        width: 85%;
-    }
-
-    .light button {
-        right: 80px;
-    }
-
-    input,
-    button {
-        width: 100%;
-    }
-
-    .btnsearch button {
-        width: 48%;
-    }
-
-    .price input {
-        width: 30%;
-    }
-}
-
-@media (min-width: 1031px) {
-    .cruds {
-        width: 70%;
-    }
-
-    .light button {
-        right: 275px;
-    }
-
-    input,
-    button {
-        width: 100%;
-    }
-
-    .btnsearch button {
-        width: 45%;
-    }
-
-    .price input {
-        width: 20%;
-    }
-}
+  }
