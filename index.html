@@ -12,16 +12,19 @@
 
 <body>
 
+    <div class="crud-container">
     <div class="cruds">
 
-        <div class="light">
-            <button id="ld" onclick="colors('#222')"><i class="fa-regular fa-lightbulb"></i></button>
-            <button id="dl" class="hide" onclick="colors('#f0f0f0')"><i class="fa-solid fa-lightbulb"></i></button>
-        </div>
+
 
         <div class="head">
             <h2>CRUDS</h2>
-            <p>Product Management System</p>
+            <p>Product Management System
+
+                <button id="ld" onclick="colors('#222')"><i class="fa-regular fa-lightbulb"></i></button>
+                <button id="dl" class="hide" onclick="colors('#f0f0f0')"><i class="fa-solid fa-lightbulb"></i></button>
+            </p>
+
         </div>
 
         <div class="inputs">
@@ -47,9 +50,10 @@
                     <button onclick="getsearchmod(this.id)" id="searchcategory">Search By Category</button>
                 </div>
             </div>
-
+        </div>
             <div id="deleteAll"></div>
 
+            <div class="table-content">
             <table>
                 <tr>
                     <th>id</th>
@@ -63,9 +67,9 @@
                     <th>update</th>
                     <th>delete</th>
                 </tr>
-
                 <tbody id="tbody"></tbody>
             </table>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
